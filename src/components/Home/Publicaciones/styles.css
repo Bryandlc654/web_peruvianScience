@@ -1,0 +1,21 @@
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size:1.25rem;
+    font-weight: 600;
+    color: #fff;
+    padding: .5rem;
+    background-color: black;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 1rem;
+}
+
+.mySwiper{
+    padding-top: 3rem!important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 3rem!important;
+}

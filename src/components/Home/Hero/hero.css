@@ -1,0 +1,8 @@
+.card-modal{
+    width: 350px;
+    height: 360px;
+}
+
+.ReactModal__Overlay--after-open{
+    background-color: rgba(122, 122, 122, 0.75)!important;
+}
