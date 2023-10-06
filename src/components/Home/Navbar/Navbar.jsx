@@ -1,4 +1,6 @@
 import { Fragment, useState } from "react";
+import { Link } from 'react-router-dom';
+
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -16,7 +18,7 @@ const products = [
   {
     name: "Nuestros Asociados",
     description: "Explora el panorama de colaboradores en nuestra editorial.",
-    href: "#",
+    href: "/asociados",
     icon: UsersIcon,
   },
   {
@@ -67,9 +69,9 @@ export default function Navbar() {
             </button>
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link to="/inicio" className="text-sm font-semibold leading-6 text-gray-900">
               Inicio
-            </a>
+            </Link>
             <Popover className="relative">
               <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
                 Sobre nosotros
@@ -192,7 +194,7 @@ export default function Navbar() {
                             <Disclosure.Button
                               key={item.name}
                               as="a"
-                              href={item.href}
+                              to={item.href}
                               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                               {item.name}
