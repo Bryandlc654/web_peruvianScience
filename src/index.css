@@ -22,3 +22,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+svg #wheel {
+	animation: scroll ease 1.5s infinite;
+}
+
