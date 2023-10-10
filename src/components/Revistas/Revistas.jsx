@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Home/Navbar/Navbar'
 import Rlca from './Rlca/Rlca'
+import Prius from './Prius/Prius'
 
 
 const Revistas = () => {
@@ -41,6 +42,7 @@ const Revistas = () => {
                 </div>
             </div>
             <Rlca></Rlca>
+            <Prius></Prius>
         </>
     )
 }
