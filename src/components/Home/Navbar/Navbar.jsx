@@ -25,7 +25,7 @@ const products = [
     name: "Nuestros Convenios",
     description:
       "Descubre las alianzas estratégicas que fortalecen nuestra labor científica.",
-    href: "#",
+    href: "/convenios",
     icon: BriefcaseIcon,
   },
 ];
@@ -133,10 +133,10 @@ export default function Navbar() {
                 </Popover.Panel>
               </Transition>
             </Popover>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link to="/revistas" className="text-sm font-semibold leading-6 text-gray-900">
               Revistas
-            </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            </Link>
+            <a href="https://racionalidades.peruvianscience.org/index.php/editorial" target="_blank" className="text-sm font-semibold leading-6 text-gray-900">
               Editorial Racionalidades
             </a>
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
@@ -204,14 +204,14 @@ export default function Navbar() {
                       </>
                     )}
                   </Disclosure>
-                  <a
-                    href="#"
+                  <Link
+                    to="/revistas"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Revistas
-                  </a>
+                  </Link>
                   <a
-                    href="#"
+                    href="https://racionalidades.peruvianscience.org/index.php/editorial"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Editorial Racionalidades

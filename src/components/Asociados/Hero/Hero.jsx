@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="relative isolate overflow-hidde py-24 sm:py-32 w-full flex text-center justify-center ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">Nuestro Asociados</h2>
+                    <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">Nuestros Asociados</h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                         Conoce al Detallado Comité Editorial que Impulsa la Calidad de Nuestras Revistas Científicas. Profesionales Apasionados que Guiarán tu Experiencia en el Mundo de la Investigación.
                     </p>
