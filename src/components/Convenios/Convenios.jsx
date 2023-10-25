@@ -1,10 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Navbar from '../Home/Navbar/Navbar'
 import Subcripcion from '../Home/Subscripcion/Subscripcion'
+import axios from 'axios';
+import toast, { Toaster } from "react-hot-toast";
 
 
 
 const Convenios = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  const [formData, setFormData] = React.useState({
+    institucion: "",
+    representante: "",
+    dni: "",
+    celular: "",
+    correo: "",
+    comentarios: "",
+  });
+
+  const notifySuccess = () => toast.success("Enviado correctamente");
+  const notifyError = () => toast.error("Por favor, completa todos los campos");
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post("https://formspree.io/f/xleyagpw", formData);
+      notifySuccess();
+      setFormData({
+        institucion: "",
+        representante: "",
+        dni: "",
+        celular: "",
+        correo: "",
+        comentarios: "",
+      });
+    } catch (error) {
+      console.error("Error sending form data:", error);
+    }
+  };
   return (
     <>
       <Navbar></Navbar>
@@ -20,15 +62,172 @@ const Convenios = () => {
               href="#"
               className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               title="Quiero Publicar"
+              onClick={openModal}
             >
               Quiero unirme
             </a>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Más información <span aria-hidden="true">→</span>
-            </a>
+            {showModal && (
+              <div className="fixed inset-0 z-10 overflow-y-auto">
+                <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                  <div
+                    className="fixed inset-0 transition-opacity"
+                    aria-hidden="true"
+                  >
+                    <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
+                  </div>
+                  <span
+                    className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                    aria-hidden="true"
+                  >
+                    &#8203;
+                  </span>
+                  <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                    <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                      <h3 className="text-lg leading-6 font-medium text-gray-900">
+                        Solicitud de Convenio
+                      </h3>
+                      <div className="mt-2">
+                        <form onSubmit={handleFormSubmit}>
+                          <div className="mb-4">
+                            <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                              Institución Solicitante:
+                            </label>
+                            <input
+                              type="text"
+                              id="institucion"
+                              name="institucion"
+                              autoComplete="given-name"
+                              required
+                              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                              value={formData.institucion}
+                              onChange={(e) =>
+                                setFormData((prevData) => ({
+                                  ...prevData,
+                                  institucion: e.target.value,
+                                }))
+                              }
+                            />
+                          </div>
+                          <div className="mb-4">
+                            <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                              Representante:
+                            </label>
+                            <input
+                              type="text"
+                              id="representante"
+                              name="representante"
+                              required
+                              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                              value={formData.representante}
+                              onChange={(e) =>
+                                setFormData((prevData) => ({
+                                  ...prevData,
+                                  representante: e.target.value,
+                                }))
+                              }
+                            />
+                          </div>
+                          <div className="mb-4">
+                            <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                              DNI del Representante:
+                            </label>
+                            <input
+                              type="text"
+                              id="Dnirepresentante"
+                              name="Dnirepresentante"
+                              required
+                              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                              value={formData.dni}
+                              onChange={(e) =>
+                                setFormData((prevData) => ({
+                                  ...prevData,
+                                  dni: e.target.value,
+                                }))
+                              }
+                            />
+                          </div>
+                          <div className="mb-4">
+                            <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                              Celular:
+                            </label>
+                            <input
+                              type="tel"
+                              id="celular"
+                              name="celular"
+                              required
+                              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                              value={formData.celular}
+                              onChange={(e) =>
+                                setFormData((prevData) => ({
+                                  ...prevData,
+                                  celular: e.target.value,
+                                }))
+                              }
+                            />
+                          </div>
+                          <div className="mb-4">
+                            <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                              Correo:
+                            </label>
+                            <input
+                              type="text"
+                              id="correo"
+                              name="correo"
+                              required
+                              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                              value={formData.correo}
+                              onChange={(e) =>
+                                setFormData((prevData) => ({
+                                  ...prevData,
+                                  correo: e.target.value,
+                                }))
+                              }
+                            />
+                          </div>
+                          <div className="mb-4">
+                            <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                              Comentarios:
+                            </label>
+                            <input
+                              type="text"
+                              id="comentarios"
+                              name="comentarios"
+                              required
+                              className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                              placeholder='¿Por que desea tener un convenio con el Centro Editorial?'
+                              value={formData.comentarios}
+                              onChange={(e) =>
+                                setFormData((prevData) => ({
+                                  ...prevData,
+                                  comentarios: e.target.value,
+                                }))
+                              }
+                            />
+                          </div>
+                          <div className="mt-4">
+                            <button
+                              type="submit"
+                              className="bg-black text-white px-4 py-2 rounded-md"
+                            >
+                              Enviar
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                      <button
+                        onClick={closeModal}
+                        type="button"
+                        className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-black text-base font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <a className='w-full flex text-center items-center flex-col mt-16'>
             <svg width="20px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinecap: 'round', strokeLinejoin: 'round', strokeMiterlimit: '1.5' }}>
@@ -97,7 +296,7 @@ const Convenios = () => {
                 Presentamos a AOD, una empresa de desarrollo de software que se distingue por su enfoque creativo, practicidad y perfeccionismo. Con un equipo apasionado y comprometido, AOD abraza la misión de crear experiencias de éxito para sus clientes a través de proyectos diseñados con verdadero arte.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <a href='https://educaidscientific.com/' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
+                <a href='http://aod.pe' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
                 <div className="h-px flex-auto bg-gray-400" />
               </div>
 
@@ -121,7 +320,7 @@ const Convenios = () => {
                 El Instituto de Educación Superior Tecnológico de Pisco, se presenta como una institución comprometida con la formación de profesionales técnicos, respondiendo a las demandas del contexto laboral actual. En su esfuerzo por brindar una educación de calidad, el instituto ha diseñado una oferta formativa pertinente y actualizada.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <a href='https://educaidscientific.com/' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
+                <a href='https://www.iestppisco.edu.pe/' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
                 <div className="h-px flex-auto bg-gray-400" />
               </div>
 
@@ -160,6 +359,7 @@ const Convenios = () => {
           </div>
         </div>
       </div>
+      <Toaster />
       <Subcripcion></Subcripcion>
     </>
   )

@@ -7,6 +7,7 @@ import {
   UsersIcon,
   BriefcaseIcon,
   XMarkIcon,
+  HomeModernIcon,
 } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
@@ -15,6 +16,12 @@ import {
 } from "@heroicons/react/20/solid";
 
 const products = [
+  {
+    name: "¿Quienes somos?",
+    description: "Descubre la Esencia que Nos Define: Nuestra Historia, Nuestra Identidad.",
+    href: "/quienes-somos",
+    icon: HomeModernIcon,
+  },
   {
     name: "Nuestros Asociados",
     description: "Explora el panorama de colaboradores en nuestra editorial.",
@@ -54,9 +61,9 @@ export default function Navbar() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="/inicio" className="-m-1.5 p-1.5">
               <span className="font-bold text-lg">Peruvian Science</span>
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -98,7 +105,7 @@ export default function Navbar() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                            className="h-6 w-6 text-gray-600 group-hover:text-black"
                             aria-hidden="true"
                           />
                         </div>
@@ -139,9 +146,9 @@ export default function Navbar() {
             <a href="https://racionalidades.peruvianscience.org/index.php/editorial" target="_blank" className="text-sm font-semibold leading-6 text-gray-900">
               Editorial Racionalidades
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link to="/contacto" className="text-sm font-semibold leading-6 text-gray-900">
               Contacto
-            </a>
+            </Link>
           </Popover.Group>
         </nav>
         <Dialog
@@ -154,9 +161,9 @@ export default function Navbar() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <a href="#" className="-m-1.5 p-1.5">
+                <Link to="/inicio" className="-m-1.5 p-1.5">
                   <span className="font-bold text-lg">Peruvian Science</span>
-                </a>
+                </Link>
               </a>
               <button
                 type="button"
@@ -170,12 +177,12 @@ export default function Navbar() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/inicio"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Inicio
-                  </a>
+                  </Link>
                   <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
@@ -191,14 +198,14 @@ export default function Navbar() {
                         </Disclosure.Button>
                         <Disclosure.Panel className="mt-2 space-y-2">
                           {[...products, ...callsToAction].map((item) => (
-                            <Disclosure.Button
+                            <Link
                               key={item.name}
                               as="a"
                               to={item.href}
                               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                               {item.name}
-                            </Disclosure.Button>
+                            </Link>
                           ))}
                         </Disclosure.Panel>
                       </>
@@ -216,12 +223,12 @@ export default function Navbar() {
                   >
                     Editorial Racionalidades
                   </a>
-                  <a
-                    href="#"
+                  <Link
+                    to="/contacto"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Contacto
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

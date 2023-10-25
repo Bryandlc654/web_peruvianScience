@@ -2,8 +2,9 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import './styles.css';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 const posts = [
     {
@@ -89,15 +90,29 @@ export default function Publicaciones({ post }) {
                 </div>
                 <hr className='my-8' />
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
                     navigation={true}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                    }}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    modules={[Autoplay, Navigation]}
+                    modules={[Autoplay, Navigation, Pagination]}
                     className="mySwiper"
                 >
                     <div className="mx-auto py-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">

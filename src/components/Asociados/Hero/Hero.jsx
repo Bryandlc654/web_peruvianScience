@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
+import toast, { Toaster } from "react-hot-toast";
 
 const stats = [
     { name: 'Editores en Jefe', value: '4' },
@@ -7,6 +9,49 @@ const stats = [
 ]
 
 const Hero = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
+    const [formData, setFormData] = React.useState({
+        nombres: "",
+        correo: "",
+        celular: "",
+        orcid: "",
+        institucion: "",
+        grado: "",
+        comentarios: "",
+    });
+
+    const notifySuccess = () => toast.success("Enviado correctamente");
+    const notifyError = () => toast.error("Por favor, completa todos los campos");
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            await axios.post("https://formspree.io/f/xleyagpw", formData);
+            notifySuccess();
+            setFormData({
+                nombres: "",
+                correo: "",
+                celular: "",
+                orcid: "",
+                institucion: "",
+                grado: "",
+                comentarios: "",
+            });
+        } catch (error) {
+            console.error("Error sending form data:", error);
+        }
+    };
+
     return (
         <div className="relative isolate overflow-hidde py-24 sm:py-32 w-full flex text-center justify-center ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -21,15 +66,194 @@ const Hero = () => {
                         href="#"
                         className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         title="Quiero Publicar"
+                        onClick={openModal}
                     >
                         Quiero unirme
                     </a>
-                    <a
-                        href="#"
-                        className="text-sm font-semibold leading-6 text-gray-900"
-                    >
-                        Más información <span aria-hidden="true">→</span>
-                    </a>
+                    {showModal && (
+                        <div className="fixed inset-0 z-10 overflow-y-auto">
+                            <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                                <div
+                                    className="fixed inset-0 transition-opacity"
+                                    aria-hidden="true"
+                                >
+                                    <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
+                                </div>
+                                <span
+                                    className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                                    aria-hidden="true"
+                                >
+                                    &#8203;
+                                </span>
+                                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                                    <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                                        <h3 className="text-lg leading-6 font-medium text-gray-900">
+                                            Unirme al Equipo Editorial
+                                        </h3>
+                                        <div className="mt-2">
+                                            <form onSubmit={handleFormSubmit}>
+                                                <div className="mb-4">
+                                                    <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                                                        Nombres Completos:
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        id="nombres"
+                                                        name="nombres"
+                                                        autoComplete="given-name"
+                                                        required
+                                                        className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                                                        value={formData.nombres}
+                                                        onChange={(e) =>
+                                                            setFormData((prevData) => ({
+                                                                ...prevData,
+                                                                nombres: e.target.value,
+                                                            }))
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="mb-4">
+                                                    <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                                                        Correo:
+                                                    </label>
+                                                    <input
+                                                        type="email"
+                                                        id="correo"
+                                                        name="correo"
+                                                        autoComplete="email"
+                                                        required
+                                                        className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                                                        value={formData.correo}
+                                                        onChange={(e) =>
+                                                            setFormData((prevData) => ({
+                                                                ...prevData,
+                                                                correo: e.target.value,
+                                                            }))
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="mb-4">
+                                                    <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                                                        Celular  :
+                                                    </label>
+                                                    <input
+                                                        type="tel"
+                                                        id="celular"
+                                                        name="celular"
+                                                        required
+                                                        className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                                                        value={formData.celular}
+                                                        onChange={(e) =>
+                                                            setFormData((prevData) => ({
+                                                                ...prevData,
+                                                                celular: e.target.value,
+                                                            }))
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="mb-4">
+                                                    <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                                                        ORCID :
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        id="orcid"
+                                                        name="orcid"
+                                                        required
+                                                        className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                                                        value={formData.orcid}
+                                                        onChange={(e) =>
+                                                            setFormData((prevData) => ({
+                                                                ...prevData,
+                                                                orcid: e.target.value,
+                                                            }))
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="mb-4">
+                                                    <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                                                        Institución :
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        id="institucion"
+                                                        name="institucion"
+                                                        required
+                                                        placeholder='Institucion donde labora'
+                                                        className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                                                        value={formData.institucion}
+                                                        onChange={(e) =>
+                                                            setFormData((prevData) => ({
+                                                                ...prevData,
+                                                                institucion: e.target.value,
+                                                            }))
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="mb-4">
+                                                    <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                                                        Grado :
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        id="grado"
+                                                        name="grado"
+                                                        required
+                                                        className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                                                        placeholder='Grado más alto alcanzado'
+                                                        value={formData.grado}
+                                                        onChange={(e) =>
+                                                            setFormData((prevData) => ({
+                                                                ...prevData,
+                                                                grado: e.target.value,
+                                                            }))
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="mb-4">
+                                                    <label htmlFor="nombres" className="block text-sm font-medium text-gray-700">
+                                                        Comentarios :
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        id="grado"
+                                                        name="grado"
+                                                        required
+                                                        placeholder='Por que desea unirse al equipo editorial'
+                                                        className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                                                        value={formData.comentarios}
+                                                        onChange={(e) =>
+                                                            setFormData((prevData) => ({
+                                                                ...prevData,
+                                                                comentarios: e.target.value,
+                                                            }))
+                                                        }
+                                                    />
+                                                </div>
+                                                <div className="mt-4">
+                                                    <button
+                                                        type="submit"
+                                                        className="bg-black text-white px-4 py-2 rounded-md"
+                                                    >
+                                                        Enviar
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                                        <button
+                                            onClick={closeModal}
+                                            type="button"
+                                            className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-black text-base font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+                                        >
+                                            Cerrar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
                 <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                     <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-3">
@@ -48,7 +272,7 @@ const Hero = () => {
                     </svg>
                     <p>Ver más</p>
                 </a>
-
+                <Toaster />
             </div>
         </div>
     )

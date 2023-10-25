@@ -23,7 +23,7 @@ const Revistas = () => {
             name: 'Revista Arbitrada de Educación Contemporánea',
             href: 'https://revistas.peruvianscience.org/index.php/rearca/index',
             imageSrc: 'https://i.postimg.cc/7ZWkKCqd/Recurso-3logoraredua.png',
-            imageAlt: "Revista Arbitrada de Ciencias Ambientales",
+            imageAlt: "Revista Arbitrada de Educación Contemporánea",
             issn: '',
         },
         {

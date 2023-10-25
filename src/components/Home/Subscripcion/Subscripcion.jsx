@@ -1,8 +1,31 @@
 import React from 'react'
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
+import { Link } from 'react-router-dom';
 
 
 const Subscripcion = () => {
+    const [formData, setFormData] = React.useState({
+        email: "",
+    });
+
+    const notifySuccess = () => toast.success("Enviado correctamente");
+    const notifyError = () => toast.error("Por favor, completa todos los campos");
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            await axios.post("https://formspree.io/f/xleyagpw", formData);
+            notifySuccess();
+            setFormData({
+                email: "",
+            });
+        } catch (error) {
+            console.error("Error sending form data:", error);
+        }
+    };
     return (
         <div className="relative isolate overflow-hidden bg-gray-900 pt-16 sm:pt-24 lg:pt-32 mt-10">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -12,7 +35,7 @@ const Subscripcion = () => {
                         <p className="mt-4 text-lg leading-8 text-gray-300">
                             Recibe directamente en tu correo electrónico las últimas publicaciones de nuestras revistas.
                         </p>
-                        <div className="mt-6 flex max-w-md gap-x-4">
+                        <form onSubmit={handleFormSubmit} className="mt-6 flex max-w-md gap-x-4">
                             <label htmlFor="email-address" className="sr-only">
                                 Correo Electrónico
                             </label>
@@ -24,6 +47,13 @@ const Subscripcion = () => {
                                 required
                                 className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                                 placeholder="Ingresa tu correo electrónico"
+                                value={formData.email}
+                                onChange={(e) =>
+                                    setFormData((prevData) => ({
+                                        ...prevData,
+                                        email: e.target.value,
+                                    }))
+                                }
                             />
                             <button
                                 type="submit"
@@ -31,7 +61,7 @@ const Subscripcion = () => {
                             >
                                 Subscribir
                             </button>
-                        </div>
+                        </form>
                     </div>
                     <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                         <div className="flex flex-col items-start">
@@ -64,24 +94,29 @@ const Subscripcion = () => {
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
-                                <a href="#" className="mr-4 hover:underline md:mr-6">
-                                    Sobre nosotros
-                                </a>
+                                <Link to="/asociados" className="mr-4 hover:underline md:mr-6">
+                                    Nuestros Asociados
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="mr-4 hover:underline md:mr-6 ">
+                                <Link to="/convenios" className="mr-4 hover:underline md:mr-6">
+                                    Nuestros Convenios
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/revistas" className="mr-4 hover:underline md:mr-6 ">
                                     Revistas
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="mr-4 hover:underline md:mr-6 ">
+                                <a href="https://racionalidades.peruvianscience.org/index.php/editorial" className="mr-4 hover:underline md:mr-6 ">
                                     Editorial Racionalidades
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="mr-4 hover:underline md:mr-6 ">
+                                <Link to="/contacto" className="mr-4 hover:underline md:mr-6 ">
                                     Contacto
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

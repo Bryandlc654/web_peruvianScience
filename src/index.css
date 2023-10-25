@@ -37,3 +37,7 @@ svg #wheel {
 	animation: scroll ease 1.5s infinite;
 }
 
+
+.image-investigator{
+	filter: grayscale(100%);
+}

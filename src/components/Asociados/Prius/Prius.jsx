@@ -165,7 +165,7 @@ const Prius = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src="https://i.postimg.cc/tCDyVSwX/Recurso-6logoprius.png" alt="" />
+                                    <img src="https://i.postimg.cc/tCDyVSwX/Recurso-6logoprius.png" alt="Revista Prius" />
                                 </div>
                             </div>
                         </div>
