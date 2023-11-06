@@ -1,6 +1,5 @@
 import React from 'react'
 import { BookmarkIcon, CheckBadgeIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
-import Foto from '../../../assets/riyuli.jpeg'
 
 const features = [
     {
@@ -57,9 +56,9 @@ const Yuli = () => {
                             </div>
                         </div>
                         <img
-                            src={Foto}
-                            alt="Product screenshot"
-                            className="w-[48rem] h-[40rem] object-cover max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 image-investigator"
+                            src="https://repoimagenes.000webhostapp.com/Imagenes/riyuli.webp"
+                            alt="Ricardo Yuli"
+                            className="w-[30rem] h-[30rem] object-cover rounded-full imagen-investigador shadow-xl ring-1  ring-gray-400/10 md:-ml-4 lg:-ml-0 image-investigator"
                         />
                     </div>
                 </div>

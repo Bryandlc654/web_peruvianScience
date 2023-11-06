@@ -1,6 +1,5 @@
 import React from 'react'
 import { CheckBadgeIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
-import Foto from '../../../assets/raulchamané.jpeg'
 
 const features = [
     {
@@ -50,9 +49,9 @@ const Chamane = () => {
                             </div>
                         </div>
                         <img
-                            src={Foto}
-                            alt="Product screenshot"
-                            className="w-[48rem] h-[40rem] object-contain  max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 image-investigator"
+                            src="https://repoimagenes.000webhostapp.com/Imagenes/raulchaman%C3%A9.webp"
+                            alt="Raúl Chamane"
+                            className="w-[30rem] h-[30rem] object-cover rounded-full imagen-investigador shadow-xl ring-1  ring-gray-400/10 md:-ml-4 lg:-ml-0 image-investigator"
                         />
                     </div>
                 </div>

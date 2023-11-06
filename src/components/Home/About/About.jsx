@@ -1,13 +1,11 @@
+import React, { useState, useEffect } from 'react';
 import {
   UsersIcon,
   ShieldCheckIcon,
   VideoCameraIcon,
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
-import logoRoad from "../../../assets/logoroad.png";
-import logoEuroPub from "../../../assets/logoeuropub.png";
-import logoAura from "../../../assets/logoaura.png";
-import logoSherpa from "../../../assets/logosherpa.png";
+
 
 const features = [
 
@@ -35,6 +33,23 @@ const features = [
 
 
 export default function About() {
+  const [indexaciones, setIndexaciones] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          'https://strapi-production-3879.up.railway.app/api/home-peruvian-indexacions'
+        );
+        const data = await response.json();
+        setIndexaciones(data.data);
+      } catch (error) {
+        console.error('Error fetching indexaciones:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -78,34 +93,16 @@ export default function About() {
             Nuestras indexaciones
           </h2>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src={logoRoad}
-              alt="Road"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src={logoEuroPub}
-              alt="Reform"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src={logoAura}
-              alt="Tuple"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src={logoSherpa}
-              alt="SavvyCal"
-              width={158}
-              height={48}
-            />
+          {indexaciones.map((indexacion) => (
+          <img
+            key={indexacion.id}
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src={indexacion.attributes.src}
+            alt={indexacion.attributes.alt}
+            width={158}
+            height={48}
+          />
+        ))}
           </div>
         </div>
       </div>

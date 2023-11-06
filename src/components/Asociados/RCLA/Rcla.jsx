@@ -9,7 +9,7 @@ const people = [
         universidad: 'Universidad San Pedro, Perú',
         orcid: 'https://orcid.org/0000-0001-7138-7183',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Ing. David Saravia Navarro',
@@ -17,7 +17,7 @@ const people = [
         universidad: 'Univ. Nacional Agraria La Molina - Perú',
         orcid: 'https://orcid.org/0000-0003-3136-220X',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Armando Vasquez Matute',
@@ -25,7 +25,7 @@ const people = [
         universidad: 'Univ. Nacional Federico Villareal - Perú ',
         orcid: 'https://orcid.org/0000-0002-6726-8103',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Neiba Yadira Echeagaray Solorza',
@@ -33,7 +33,7 @@ const people = [
         universidad: 'Univ. Politécnica de Sinaloa - México',
         orcid: 'https://orcid.org/0000-0002-4830-9395',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Ing. Kennedy Zela Uscamayta',
@@ -41,7 +41,7 @@ const people = [
         universidad: 'Univ. Nacional del Altiplano - Perú',
         orcid: 'https://orcid.org/0000-0002-0285-219X',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Wilmer Aquino Minchan ',
@@ -49,7 +49,7 @@ const people = [
         universidad: 'Univ. Nacional de Cajamarca - Perú',
         orcid: 'https://orcid.org/0000-0002-2624-1174',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Francisco Andrés Villalobo Brunello',
@@ -57,7 +57,7 @@ const people = [
         universidad: 'Univ. Nacional de Catamarca - Argentina',
         orcid: 'https://orcid.org/0000-0002-2097-9805',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Blga. Ana Belén Espinoza Jara',
@@ -65,7 +65,7 @@ const people = [
         universidad: 'Univ. Nacional Mayor de San Marcos – Perú ',
         orcid: 'https://orcid.org/0000-0002-1623-2389',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
 ]
 
@@ -76,7 +76,7 @@ const cientifico = [
         universidad: 'Univ. Autónoma de Sinaloa - México',
         orcid: 'https://orcid.org/0000-0003-3501-7059',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Andrés Ultreras Rodríguez',
@@ -84,7 +84,7 @@ const cientifico = [
         universidad: 'Univ. Autónoma de Sinaloa - México',
         orcid: 'https://orcid.org/0000-0003-0621-9508',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Bach. Jhojana Marilia Lorenzo Quispe',
@@ -92,7 +92,7 @@ const cientifico = [
         universidad: 'Univ. Nacional Hermilio Valdizán - Perú',
         orcid: 'https://orcid.org/0009-0003-7702-3972',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Ing. Albana Rocío Cáceres Borzaga',
@@ -100,7 +100,7 @@ const cientifico = [
         universidad: 'Univ. Nacional de Catamarca - Argentina',
         orcid: 'https://orcid.org/0000-0002-2372-1893',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Ing. Augusto Carlos Contreras Díaz ',
@@ -108,7 +108,7 @@ const cientifico = [
         universidad: 'Universidad Nacional Agraria La Molina -  Perú',
         orcid: 'https://orcid.org/0000-0002-5563-4858',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Mario Ben-Hur Chuc Armendáriz',
@@ -116,7 +116,7 @@ const cientifico = [
         universidad: 'Tecnm Campus Calkini – ITESCAM, México',
         orcid: 'https://orcid.org/0000-0002-6629-1168',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
 ]
 
@@ -132,7 +132,6 @@ const Rcla = () => {
         <>
             <div className="bg-white py-8 sm:py-8">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    {/*  */}
                     <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                         <div className="p-8 sm:p-10 lg:flex-auto">
                             <h3 className="text-2xl font-bold tracking-tight text-gray-900">Revista Latinoamericana De Ciencias Agrarias</h3>
@@ -158,7 +157,7 @@ const Rcla = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src="https://i.postimg.cc/VN0cpY66/Recurso-5logoagraria.png" alt="" />
+                                    <img src="https://repoimagenes.000webhostapp.com/Imagenes/logoagraria.webp" alt="Revista Latinoamericana De Ciencias Agrarias" />
                                 </div>
                             </div>
                         </div>
@@ -174,12 +173,12 @@ const Rcla = () => {
                         {people.map((person) => (
                             <li key={person.name}>
                                 <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="Comité editorial" />
                                     <div>
                                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                         <p className="text-sm font-lightleading-6 text-gray-600">{person.role}</p>
                                         <p className="text-sm font-light leading-6 text-gray-600">{person.universidad}</p>
-                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600">ORCID</a>
+                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600" title='Ver ORCID'>ORCID</a>
                                     </div>
                                 </div>
                             </li>
@@ -196,12 +195,12 @@ const Rcla = () => {
                         {cientifico.map((person) => (
                             <li key={person.name}>
                                 <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="Comité Científico Internacional" />
                                     <div>
                                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                         <p className="text-sm font-lightleading-6 text-gray-600">{person.role}</p>
                                         <p className="text-sm font-light leading-6 text-gray-600">{person.universidad}</p>
-                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600">ORCID</a>
+                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600" title='Ver ORCID'>ORCID</a>
                                     </div>
                                 </div>
                             </li>

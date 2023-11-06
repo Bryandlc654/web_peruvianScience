@@ -9,7 +9,7 @@ const Priuspeople = [
         universidad: 'Universidad Nacional Mayor de San Marcos - Perú',
         orcid: 'https://orcid.org/0000-0002-8879-9544 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Manuel Bermúdez Tapia',
@@ -17,7 +17,7 @@ const Priuspeople = [
         universidad: 'Universidad Nacional Mayor de San Marcos - Perú',
         orcid: 'https://orcid.org/0000-0003-1576-9464 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Antonio Alfonso Peña Jumpa',
@@ -25,7 +25,7 @@ const Priuspeople = [
         universidad: 'Katholieke Universiteit Leuven - Bélgica',
         orcid: 'https://orcid.org/0000-0003-1571-0139 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Jesús Francisco Carpio Mendoza',
@@ -33,7 +33,7 @@ const Priuspeople = [
         universidad: 'Universidad Nacional Autónoma de México - México',
         orcid: 'https://orcid.org/0000-0002-6862-9804 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Raúl Alberto Rengifo Lozano',
@@ -41,7 +41,7 @@ const Priuspeople = [
         universidad: 'Universidad Nacional Mayor de San Marcos',
         orcid: 'https://orcid.org/0000-0002-6545-6442 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Mauricio Bahid Gonzales Soria',
@@ -49,7 +49,7 @@ const Priuspeople = [
         universidad: 'Universidad  Técnica de Oruro - Bolivia',
         orcid: 'https://orcid.org/0000-0003-1571-0139 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Octavio García Ramírez',
@@ -57,7 +57,7 @@ const Priuspeople = [
         universidad: 'Red Académica de Gobierno Abierto',
         orcid: 'https://orcid.org/0009-0002-9575-6697 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
 ]
 
@@ -68,7 +68,7 @@ const Priuscientifico = [
         universidad: 'Universidad de Lima - Perú',
         orcid: 'https://orcid.org/0000-0001-5403-9232',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Alixon David Reyes Rodríguez',
@@ -76,7 +76,7 @@ const Priuscientifico = [
         universidad: 'Universidad Adventista de Chile - Chile',
         orcid: 'https://orcid.org/0000-0001-9857-0930',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Luis Andrés Portugal Pizarro',
@@ -84,7 +84,7 @@ const Priuscientifico = [
         universidad: 'Universidad San Martín de Porres - Perú',
         orcid: 'https://orcid.org/0000-0001-5403-9232',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Santiago Arturo Gutiérrez Rodríguez',
@@ -92,7 +92,7 @@ const Priuscientifico = [
         universidad: 'Universidad Nacional de Trujillo - Perú',
         orcid: 'https://orcid.org/0000-0003-3612-1587',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Maria Adela Cuba Muñiz',
@@ -100,7 +100,7 @@ const Priuscientifico = [
         universidad: 'Universidad Andina de Cusco - Perú',
         orcid: 'https://orcid.org/0000-0003-1327-947X',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Raúl Bladimiro Canelo Rabanal',
@@ -108,7 +108,7 @@ const Priuscientifico = [
         universidad: 'Universidad Nacional Mayor de San Marcos - Perú',
         orcid: 'https://orcid.org/0000-0002-1776-247X',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Mg. Armando Gómez Híjar',
@@ -116,7 +116,7 @@ const Priuscientifico = [
         universidad: 'Universidad Federico Villareal - Perú',
         orcid: 'https://orcid.org/0009-0001-2730-5483',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Abg. Giannina Eva Diaz Barriaga',
@@ -124,7 +124,7 @@ const Priuscientifico = [
         universidad: 'Universidad César Vallejo - Perú',
         orcid: 'https://orcid.org/0000-0001-6118-2176',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
 ]
 
@@ -140,7 +140,6 @@ const Prius = () => {
         <>
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    {/*  */}
                     <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                         <div className="p-8 sm:p-10 lg:flex-auto">
                             <h3 className="text-2xl font-bold tracking-tight text-gray-900">PRIUS - Revista de Derecho y Ciencia Política</h3>
@@ -165,7 +164,7 @@ const Prius = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src="https://i.postimg.cc/tCDyVSwX/Recurso-6logoprius.png" alt="Revista Prius" />
+                                    <img src="https://repoimagenes.000webhostapp.com/Imagenes/prius.webp" alt="Revista Prius" />
                                 </div>
                             </div>
                         </div>
@@ -181,12 +180,12 @@ const Prius = () => {
                         {Priuspeople.map((person) => (
                             <li key={person.name}>
                                 <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="Comité editorial" />
                                     <div>
                                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                         <p className="text-sm font-lightleading-6 text-gray-600">{person.role}</p>
                                         <p className="text-sm font-light leading-6 text-gray-600">{person.universidad}</p>
-                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600">ORCID</a>
+                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600" title='Ver ORCID'>ORCID</a>
                                     </div>
                                 </div>
                             </li>
@@ -203,12 +202,12 @@ const Prius = () => {
                         {Priuscientifico.map((person) => (
                             <li key={person.name}>
                                 <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="Comité Científico Internacional" />
                                     <div>
                                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                         <p className="text-sm font-lightleading-6 text-gray-600">{person.role}</p>
                                         <p className="text-sm font-light leading-6 text-gray-600">{person.universidad}</p>
-                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600">ORCID</a>
+                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600" title='Ver ORCID'>ORCID</a>
                                     </div>
                                 </div>
                             </li>

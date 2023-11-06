@@ -14,7 +14,8 @@ const Reaca = () => {
                                 Afiliada a la reconocida editorial Peruvian Science con sede en Perú, se enorgullece de ser un referente en el campo de las Ciencias Ambientales. Nuestro objetivo principal es proporcionar una plataforma para la difusión de investigaciones originales y de alta calidad que aborden los desafíos y problemáticas relacionadas con el medio ambiente y su interacción con la sociedad.
                             </p>
                             <div className="mt-10 flex items-center gap-x-4">
-                                <a href='https://revistas.peruvianscience.org/index.php/rearca/index' className="flex-none text-sm font-semibold leading-6 ">Ver Revista</a>
+                                <a href='https://revistas.peruvianscience.org/index.php/rearca/index' title='Ver Revista'
+                                    className="flex-none text-sm font-semibold leading-6 ">Ver Revista</a>
                                 <div className="h-px flex-auto bg-gray-400" />
                             </div>
 
@@ -22,7 +23,7 @@ const Reaca = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src="https://i.postimg.cc/Vk6w99PX/logorearca.png" alt="" />
+                                    <img src="https://i.postimg.cc/Vk6w99PX/logorearca.png" alt="Revista Arbitrada de Ciencias Ambientales" />
                                 </div>
                             </div>
                         </div>

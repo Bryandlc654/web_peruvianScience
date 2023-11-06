@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../Home/Navbar/Navbar'
 import Subscripcion from '../Home/Subscripcion/Subscripcion'
-import Logo from '../../assets/logo.png'
 import Editores from './Editores/Editores'
 
 const Priuspeople = [
@@ -109,7 +108,7 @@ const QuienesSomos = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src={Logo} alt="" />
+                                    <img src="https://repoimagenes.000webhostapp.com/Imagenes/logo.webp" alt="Peruvian Science" />
                                 </div>
                             </div>
                         </div>
@@ -125,11 +124,11 @@ const QuienesSomos = () => {
                         {Priuspeople.map((person) => (
                             <li key={person.name}>
                                 <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt={person.name} />
                                     <div>
                                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                         <p className="text-sm font-lightleading-6 text-gray-600">{person.role}</p>
-                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600">ORCID</a>
+                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600" title='Ver ORCID'>ORCID</a>
                                     </div>
                                 </div>
                             </li>

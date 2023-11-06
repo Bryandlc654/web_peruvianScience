@@ -9,7 +9,7 @@ const Reacapeople = [
         universidad: 'Universidad Nacional Mayor de San Marcos - Perú ',
         orcid: 'https://orcid.org/0000-0002-3545-3443 ',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
 ]
 
@@ -20,7 +20,7 @@ const Reacacientifico = [
         universidad: 'Universidad Autónoma de Sinaloa - México',
         orcid: 'https://orcid.org/0000-0003-0689-532X',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dra. Maribel Pallanez Murrieta',
@@ -28,7 +28,7 @@ const Reacacientifico = [
         universidad: 'Universidad Estatal de Sonora - México',
         orcid: 'https://orcid.org/0000-0002-1888-6319',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dr. Alfonso Corte López',
@@ -36,7 +36,7 @@ const Reacacientifico = [
         universidad: 'Universidad de Sonora - Mexico',
         orcid: 'https://orcid.org/0000-0002-3857-7855',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
     {
         name: 'Dra. Irma Baldovinos Leyva',
@@ -44,7 +44,7 @@ const Reacacientifico = [
         universidad: 'Universidad Hipócrates en Acapulco de Juárez - México',
         orcid: 'https://orcid.org/0000-0001-6242-2346',
         imageUrl:
-            'https://i.postimg.cc/Z5jyqzr4/149071.png',
+            'https://repoimagenes.000webhostapp.com/Imagenes/usuario.webp',
     },
 ]
 
@@ -85,7 +85,7 @@ const Reaca = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src="https://i.postimg.cc/Vk6w99PX/logorearca.png" alt="" />
+                                    <img src="https://repoimagenes.000webhostapp.com/Imagenes/logorearca-_1_.webp" alt="Revista Arbitrada de Ciencias Ambientales" />
                                 </div>
                             </div>
                         </div>
@@ -101,12 +101,12 @@ const Reaca = () => {
                         {Reacapeople.map((person) => (
                             <li key={person.name}>
                                 <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="Comité Editorial" />
                                     <div>
                                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                         <p className="text-sm font-lightleading-6 text-gray-600">{person.role}</p>
                                         <p className="text-sm font-light leading-6 text-gray-600">{person.universidad}</p>
-                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600">ORCID</a>
+                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600" title='Ver ORCID'>ORCID</a>
                                     </div>
                                 </div>
                             </li>
@@ -123,12 +123,12 @@ const Reaca = () => {
                         {Reacacientifico.map((person) => (
                             <li key={person.name}>
                                 <div className="flex items-center gap-x-6">
-                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                                    <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="Comité Científico Internacional" />
                                     <div>
                                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                         <p className="text-sm font-lightleading-6 text-gray-600">{person.role}</p>
                                         <p className="text-sm font-light leading-6 text-gray-600">{person.universidad}</p>
-                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600">ORCID</a>
+                                        <a href={person.orcid} className="text-sm font-light leading-6 text-gray-600" title='Ver ORCID'>ORCID</a>
                                     </div>
                                 </div>
                             </li>

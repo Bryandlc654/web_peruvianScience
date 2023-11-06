@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import toast, { Toaster } from "react-hot-toast";
+import Banner from './Banner';
+import './hero.css'
 
 
 export default function Hero() {
@@ -49,15 +51,7 @@ export default function Hero() {
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Publica tus Investigaciones
           </h1>
-          <div className="hidden sm:mb-2 mt-6 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Revisa las convocatorias de nuestras revistas.
-              <Link to="/revistas" className="font-semibold text-black" id="btn_vermas">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Ver más <span aria-hidden="true">&rarr;</span>
-              </Link>
-            </div>
-          </div>
+         <Banner></Banner>
           <p className="mt-6 text-lg text-justify leading-8 text-gray-600 ">
             Bienvenido al Centro Editorial Peruvian Science, una comunidad de
             investigadores comprometidos con la excelencia científica y la
@@ -65,6 +59,7 @@ export default function Hero() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
+            href='#'
               className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               title="Quiero Publicar"
               onClick={openModal}
@@ -203,6 +198,7 @@ export default function Hero() {
             <Link
               to="/revistas"
               className="text-sm font-semibold leading-6 text-gray-900"
+              title='Ver más información'
             >
               Más información <span aria-hidden="true">→</span>
             </Link>

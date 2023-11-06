@@ -41,3 +41,7 @@ svg #wheel {
 .image-investigator{
 	filter: grayscale(100%);
 }
+
+.imagen-investigador{
+	margin: 0 auto!important;
+}

@@ -67,7 +67,8 @@ const Prius = () => {
                                 Está dirigida a la comunidad académica y científica, educadores, investigadores y operadores jurídicos y politólogos.
                             </p>
                             <div className="mt-10 flex items-center gap-x-4">
-                                <a href='https://revistas.peruvianscience.org/index.php/PRIUS' className="flex-none text-sm font-semibold leading-6 ">Ver Revista</a>
+                                <a href='https://revistas.peruvianscience.org/index.php/PRIUS' title='Ver Revista'
+                                    className="flex-none text-sm font-semibold leading-6 ">Ver Revista</a>
                                 <div className="h-px flex-auto bg-gray-400" />
                             </div>
 
@@ -75,7 +76,7 @@ const Prius = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src="https://i.postimg.cc/tCDyVSwX/Recurso-6logoprius.png" alt="" />
+                                    <img src="https://i.postimg.cc/tCDyVSwX/Recurso-6logoprius.png" alt="Prius" />
                                 </div>
                             </div>
                         </div>
@@ -99,6 +100,7 @@ const Prius = () => {
                                     </time>
                                     <a
                                         href={post.category.href}
+                                        title='Ver publicación'
                                         className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                                     >
                                         {post.category.title}
@@ -106,7 +108,9 @@ const Prius = () => {
                                 </div>
                                 <div className="group relative">
                                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                        <a href={post.href}>
+                                        <a href={post.href}
+                                            title='Ver publicación'
+                                        >
                                             <span className="absolute inset-0" />
                                             {post.title}
                                         </a>
@@ -117,7 +121,9 @@ const Prius = () => {
                                     <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" />
                                     <div className="text-sm leading-6">
                                         <p className="font-semibold text-gray-900">
-                                            <a href={post.author.href}>
+                                            <a href={post.author.href}
+                                                title='Ver publicación'
+                                            >
                                                 <span className="absolute inset-0" />
                                                 {post.author.name}
                                             </a>

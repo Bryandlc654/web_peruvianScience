@@ -57,7 +57,8 @@ const Subscripcion = () => {
                             />
                             <button
                                 type="submit"
-                                className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                                title='Enviar'
+                                className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                             >
                                 Subscribir
                             </button>
@@ -89,7 +90,7 @@ const Subscripcion = () => {
             <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
                 <div className="w-full max-w-screen-xl mx-auto p-4">
                     <div className="sm:flex sm:items-center sm:justify-between">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="#" className="-m-1.5 p-1.5" title='Ir al Inicio'>
                             <span className="font-bold text-xl text-white">Peruvian Science</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -109,7 +110,7 @@ const Subscripcion = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="https://racionalidades.peruvianscience.org/index.php/editorial" className="mr-4 hover:underline md:mr-6 ">
+                                <a href="https://racionalidades.peruvianscience.org/index.php/editorial" title='Ir a' className="mr-4 hover:underline md:mr-6 ">
                                     Editorial Racionalidades
                                 </a>
                             </li>

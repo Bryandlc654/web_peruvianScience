@@ -143,7 +143,8 @@ export default function Navbar() {
             <Link to="/revistas" className="text-sm font-semibold leading-6 text-gray-900">
               Revistas
             </Link>
-            <a href="https://racionalidades.peruvianscience.org/index.php/editorial" target="_blank" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="https://racionalidades.peruvianscience.org/index.php/editorial" title="Ver Editorial"
+              target="_blank" className="text-sm font-semibold leading-6 text-gray-900">
               Editorial Racionalidades
             </a>
             <Link to="/contacto" className="text-sm font-semibold leading-6 text-gray-900">
@@ -219,6 +220,7 @@ export default function Navbar() {
                   </Link>
                   <a
                     href="https://racionalidades.peruvianscience.org/index.php/editorial"
+                    title="Ver Editorial"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Editorial Racionalidades

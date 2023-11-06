@@ -65,7 +65,7 @@ const Hero = () => {
                     <a
                         href="#"
                         className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        title="Quiero Publicar"
+                        title="Quiero Unirme"
                         onClick={openModal}
                     >
                         Quiero unirme

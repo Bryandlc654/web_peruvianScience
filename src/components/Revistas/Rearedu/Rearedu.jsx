@@ -14,7 +14,8 @@ const Rearedu = () => {
                                 Nuestro enfoque principal es fomentar la investigación rigurosa y la generación de conocimiento en el ámbito de la educación contemporánea. Buscamos ofrecer una plataforma de alta calidad para que investigadores, académicos y profesionales de la educación compartan sus estudios, reflexiones y perspectivas en un entorno académico y rigurosamente revisado.
                             </p>
                             <div className="mt-10 flex items-center gap-x-4">
-                                <a href='https://revistas.peruvianscience.org/index.php/raec' className="flex-none text-sm font-semibold leading-6 ">Ver Revista</a>
+                                <a href='https://revistas.peruvianscience.org/index.php/raec' title='Ver Revista'
+                                    className="flex-none text-sm font-semibold leading-6 ">Ver Revista</a>
                                 <div className="h-px flex-auto bg-gray-400" />
                             </div>
 
@@ -22,7 +23,7 @@ const Rearedu = () => {
                         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                             <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                                 <div className="mx-auto max-w-xs">
-                                    <img src="https://i.postimg.cc/7ZWkKCqd/Recurso-3logoraredua.png" alt="" />
+                                    <img src="https://i.postimg.cc/7ZWkKCqd/Recurso-3logoraredua.png" alt="Revista Arbitrada de Educación Contemporánea" />
                                 </div>
                             </div>
                         </div>

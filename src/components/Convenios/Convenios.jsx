@@ -61,7 +61,7 @@ const Convenios = () => {
             <a
               href="#"
               className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              title="Quiero Publicar"
+              title="Quiero unirme"
               onClick={openModal}
             >
               Quiero unirme
@@ -241,14 +241,13 @@ const Convenios = () => {
       </div>
       <div className="bg-white py-8 sm:py-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/*  */}
           <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
             <div className="p-8 sm:p-10 lg:flex-auto">
               <h3 className="text-2xl font-bold tracking-tight text-gray-900">Grupo JJ San Marcos</h3>
               <p className="mt-6 text-base leading-7 text-gray-600">
                 En el Grupo JJ SAN MARCOS Se ha llevado a cabo una mejora continua con la firme intención de ofrecer una experiencia educativa excepcional en el competitivo entorno educativo del siglo XXI. Dedicados a la excelencia, el Grupo JJ SAN MARCOS ha perfeccionado su plataforma de servicios, capacitación y entrenamiento para beneficiar a estudiantes y docentes por igual.</p>
               <div className="mt-10 flex items-center gap-x-4">
-                <a href='https://cecajjsm.com/' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
+                <a href='https://cecajjsm.com/' title='Ver Sitio Web' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
                 <div className="h-px flex-auto bg-gray-400" />
               </div>
 
@@ -256,7 +255,7 @@ const Convenios = () => {
             <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
               <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                 <div className="mx-auto max-w-xs">
-                  <img src="https://i.postimg.cc/vBwRngZp/Recurso-9logojjsanmarcos.png" alt="" />
+                  <img src="https://repoimagenes.000webhostapp.com/Imagenes/jjsanmarcos.webp" alt="Grupo JJ San Marcos" />
                 </div>
               </div>
             </div>
@@ -272,7 +271,7 @@ const Convenios = () => {
                 EducaID Scientific se erige como una editorial dedicada a empoderar a investigadores, desarrolladores y educadores en la vanguardia de la transformación de la comunidad científica emergente en el Perú. Con un compromiso innato con la excelencia y la innovación, nos posicionamos como una fuerza impulsora que facilita el progreso y la consolidación de la investigación en el país.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <a href='https://educaidscientific.com/' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
+                <a href='https://educaidscientific.com/' title='Ver Sitio Web' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
                 <div className="h-px flex-auto bg-gray-400" />
               </div>
 
@@ -280,7 +279,7 @@ const Convenios = () => {
             <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
               <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                 <div className="mx-auto max-w-xs">
-                  <img src="https://i.postimg.cc/KYMS4rxP/Recurso-7logoeducaid.png" alt="" />
+                  <img src="https://repoimagenes.000webhostapp.com/Imagenes/educaid.webp" alt="EducaID Scientific" />
                 </div>
               </div>
             </div>
@@ -296,7 +295,7 @@ const Convenios = () => {
                 Presentamos a AOD, una empresa de desarrollo de software que se distingue por su enfoque creativo, practicidad y perfeccionismo. Con un equipo apasionado y comprometido, AOD abraza la misión de crear experiencias de éxito para sus clientes a través de proyectos diseñados con verdadero arte.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <a href='http://aod.pe' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
+                <a href='http://aod.pe' className="flex-none text-sm font-semibold leading-6" title='Ver Sitio Web'>Visitar sitio web</a>
                 <div className="h-px flex-auto bg-gray-400" />
               </div>
 
@@ -304,7 +303,7 @@ const Convenios = () => {
             <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
               <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                 <div className="mx-auto max-w-xs">
-                  <img src="https://i.postimg.cc/x89WswH5/Recurso-10logoaod.png" alt="" />
+                  <img src="https://repoimagenes.000webhostapp.com/Imagenes/aod.webp" alt="AOD" />
                 </div>
               </div>
             </div>
@@ -320,7 +319,7 @@ const Convenios = () => {
                 El Instituto de Educación Superior Tecnológico de Pisco, se presenta como una institución comprometida con la formación de profesionales técnicos, respondiendo a las demandas del contexto laboral actual. En su esfuerzo por brindar una educación de calidad, el instituto ha diseñado una oferta formativa pertinente y actualizada.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <a href='https://www.iestppisco.edu.pe/' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
+                <a href='https://www.iestppisco.edu.pe/' className="flex-none text-sm font-semibold leading-6" title='Ver Sitio Web'>Visitar sitio web</a>
                 <div className="h-px flex-auto bg-gray-400" />
               </div>
 
@@ -328,7 +327,7 @@ const Convenios = () => {
             <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
               <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                 <div className="mx-auto max-w-xs">
-                  <img src="https://i.postimg.cc/nzGJty8s/Recurso-7logopisco.png" alt="" />
+                  <img src="https://i.postimg.cc/nzGJty8s/Recurso-7logopisco.png" alt="Instituto de Educación Superior Tecnológico de Pisco" />
                 </div>
               </div>
             </div>
@@ -344,15 +343,14 @@ const Convenios = () => {
                 JJ Guillen se posiciona como una empresa con una sólida experiencia de más de 15 años en el mercado, consolidando su reputación como referente en proyectos diversificados que abarcan instalaciones eléctricas, construcciones en drywall, domótica e inmótica, remodelación de oficinas y fabricación de estructuras metálicas.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <a href='https://jjguillen.com.pe' className="flex-none text-sm font-semibold leading-6 ">Visitar sitio web</a>
+                <a href='https://jjguillen.com.pe' className="flex-none text-sm font-semibold leading-6" title='Ver Sitio Web'>Visitar sitio web</a>
                 <div className="h-px flex-auto bg-gray-400" />
               </div>
-
             </div>
             <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
               <div className="rounded-2xl text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
                 <div className="mx-auto max-w-xs">
-                  <img src="https://i.postimg.cc/63rkfW7T/Recurso-8logojjguillen.png" alt="" />
+                  <img src="https://i.postimg.cc/63rkfW7T/Recurso-8logojjguillen.png" alt="JJ Guillen" />
                 </div>
               </div>
             </div>
